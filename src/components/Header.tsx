@@ -30,7 +30,7 @@ export default function Header({ lang, setLang }: HeaderProps) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-volt-black/95 backdrop-blur-md border-b border-white/5 py-3' : 'bg-transparent py-5'
+        scrolled || mobileOpen ? 'bg-volt-black/95 backdrop-blur-md border-b border-white/5 py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -115,8 +115,8 @@ export default function Header({ lang, setLang }: HeaderProps) {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-volt-black/98 border-t border-white/10 px-6 py-6">
-          <nav className="flex flex-col gap-5">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-volt-black border-t border-white/10 px-6 py-8 shadow-2xl animate-slide-in">
+          <nav className="flex flex-col gap-6">
             {[
               { label: t.about, id: 'about' },
               { label: t.services, id: 'services' },
@@ -126,7 +126,7 @@ export default function Header({ lang, setLang }: HeaderProps) {
               <button
                 key={id}
                 onClick={() => scrollTo(id)}
-                className="text-left text-lg font-medium tracking-widest uppercase text-white/80 hover:text-volt-yellow transition-colors"
+                className="text-left text-xl font-medium tracking-widest uppercase text-white/90 hover:text-volt-yellow transition-colors"
               >
                 {label}
               </button>

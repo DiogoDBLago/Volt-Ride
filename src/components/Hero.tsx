@@ -42,18 +42,27 @@ export default function Hero({ lang }: HeroProps) {
 
           {/* Main headline */}
           <h1 className="font-display text-[clamp(4rem,12vw,9rem)] leading-[0.9] tracking-tight text-white mb-8 animate-fade-up">
-            {t.headline.split('\n').map((line, i) => (
-              <span key={i} className="block">
-                {i === 1 ? (
-                  <>
-                    <span className="text-volt-yellow">{line.charAt(0)}</span>
-                    {line.slice(1)}
-                  </>
-                ) : (
-                  line
-                )}
-              </span>
-            ))}
+            {t.headline.split('\n').map((line, i) => {
+              if (i === 1) {
+                const words = line.split(' ');
+                const firstWord = words[0];
+                const restOfLine = words.slice(1).join(' ');
+                return (
+                  <span key={i} className="block">
+                    <span className="inline-block">
+                      <span className="text-volt-yellow">{firstWord.charAt(0)}</span>
+                      {firstWord.slice(1)}
+                    </span>
+                    {restOfLine ? ` ${restOfLine}` : ''}
+                  </span>
+                );
+              }
+              return (
+                <span key={i} className="block">
+                  {line}
+                </span>
+              );
+            })}
           </h1>
 
           {/* Subtext */}

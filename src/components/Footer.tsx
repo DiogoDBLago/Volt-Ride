@@ -52,28 +52,31 @@ export default function Footer({ lang }: FooterProps) {
             </a>
           </div>
 
-          {/* Instagram grid */}
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-1">
+          {/* Instagram highlights */}
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-10 py-4">
             {INSTAGRAM_PHOTOS.map((src, i) => (
               <a
                 key={i}
                 href="https://www.instagram.com/voltride_ebikes"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative aspect-square overflow-hidden bg-volt-gray-700"
+                className="flex flex-col items-center gap-2.5 group"
               >
-                <img
-                  src={src}
-                  alt={`Volt Ride Instagram post ${i + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-volt-black/0 group-hover:bg-volt-black/50 transition-all duration-300 flex items-center justify-center">
-                  <Instagram
-                    size={20}
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                  />
+                {/* Story Ring Wrapper */}
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-volt-yellow via-volt-yellow-light to-volt-yellow-dark transition-transform duration-300 group-hover:scale-105 active:scale-95 shadow-md">
+                  <div className="w-full h-full rounded-full border-2 border-volt-black overflow-hidden bg-volt-gray-800">
+                    <img
+                      src={src}
+                      alt={`Highlight ${t.highlights[i]}`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
+                {/* Highlight Label */}
+                <span className="font-body text-xs font-semibold tracking-wider text-white/60 group-hover:text-volt-yellow transition-colors uppercase">
+                  {t.highlights[i]}
+                </span>
               </a>
             ))}
           </div>
