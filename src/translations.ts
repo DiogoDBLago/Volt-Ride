@@ -65,7 +65,7 @@ export const translations = {
     },
     footer: {
       follow: 'Follow Us',
-      followSub: '@voltridedublin',
+      followSub: '@voltride_ebikes',
       contact: 'Contact',
       email: 'hello@voltride.ie',
       address: 'Dublin City Centre, Dublin 2, Ireland',
@@ -138,7 +138,7 @@ export const translations = {
     },
     footer: {
       follow: 'Nos Siga',
-      followSub: '@voltridedublin',
+      followSub: '@voltride_ebikes',
       contact: 'Contato',
       email: 'hello@voltride.ie',
       address: 'Dublin City Centre, Dublin 2, Irlanda',
@@ -211,7 +211,7 @@ export const translations = {
     },
     footer: {
       follow: 'Síguenos',
-      followSub: '@voltridedublin',
+      followSub: '@voltride_ebikes',
       contact: 'Contacto',
       email: 'hello@voltride.ie',
       address: 'Dublin City Centre, Dublin 2, Irlanda',

@@ -13,10 +13,9 @@ export default function Hero({ lang }: HeroProps) {
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-top bg-no-repeat"
         style={{
-          backgroundImage:
-            'url(https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: 'url(/images/fattire_ebike.jpg)',
         }}
       />
 

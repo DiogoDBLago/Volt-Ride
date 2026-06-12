@@ -7,12 +7,12 @@ interface FooterProps {
 }
 
 const INSTAGRAM_PHOTOS = [
-  'https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/163407/pexels-photo-163407.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/2085832/pexels-photo-2085832.jpeg?auto=compress&cs=tinysrgb&w=400',
+  '/images/fattire_ebike.jpg',
+  '/images/dublin_street.jpg',
+  '/images/trek_ebike.jpg',
   'https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&w=400',
+  '/images/volt_logo.png',
+  '/images/yellow_ebike.jpg',
 ];
 
 export default function Footer({ lang }: FooterProps) {
@@ -29,9 +29,10 @@ export default function Footer({ lang }: FooterProps) {
                 {t.follow}
               </p>
               <a
-                href="#"
+                href="https://www.instagram.com/voltride_ebikes"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 group"
-                onClick={(e) => e.preventDefault()}
               >
                 <Instagram size={20} className="text-white/40 group-hover:text-volt-yellow transition-colors" />
                 <span className="font-body font-medium text-white/60 group-hover:text-volt-yellow transition-colors text-sm tracking-wide">
@@ -41,8 +42,9 @@ export default function Footer({ lang }: FooterProps) {
               </a>
             </div>
             <a
-              href="#"
-              onClick={(e) => e.preventDefault()}
+              href="https://www.instagram.com/voltride_ebikes"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-white/20 hover:border-volt-yellow text-white/60 hover:text-volt-yellow font-body font-medium text-xs tracking-widest uppercase px-5 py-3 transition-all duration-200"
             >
               <Instagram size={14} />
@@ -55,8 +57,9 @@ export default function Footer({ lang }: FooterProps) {
             {INSTAGRAM_PHOTOS.map((src, i) => (
               <a
                 key={i}
-                href="#"
-                onClick={(e) => e.preventDefault()}
+                href="https://www.instagram.com/voltride_ebikes"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative aspect-square overflow-hidden bg-volt-gray-700"
               >
                 <img
