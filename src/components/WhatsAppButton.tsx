@@ -38,7 +38,7 @@ export default function WhatsAppButton() {
 
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/353123456789"
+          href="https://wa.me/353838269704"
           target="_blank"
           rel="noopener noreferrer"
           onMouseEnter={() => setTooltip(true)}

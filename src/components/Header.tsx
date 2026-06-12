@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Zap, ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 import type { Lang } from '../translations';
 import { translations } from '../translations';
 
@@ -37,18 +37,14 @@ export default function Header({ lang, setLang }: HeaderProps) {
         {/* Logo */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="flex items-center gap-2 group"
+          className="flex items-center group py-1"
           aria-label="Volt Ride"
         >
-          <div className="relative flex items-center">
-            <span className="font-display text-3xl tracking-wider text-white leading-none">VOLT</span>
-            <Zap
-              className="text-volt-yellow fill-volt-yellow mx-0.5 transition-transform duration-200 group-hover:scale-110"
-              size={22}
-              strokeWidth={0}
-            />
-            <span className="font-display text-3xl tracking-wider text-white leading-none">RIDE</span>
-          </div>
+          <img
+            src="/images/volt_logo.png"
+            alt="Volt Ride"
+            className="h-10 sm:h-12 w-auto transition-transform duration-200 group-hover:scale-105"
+          />
         </button>
 
         {/* Desktop nav */}
