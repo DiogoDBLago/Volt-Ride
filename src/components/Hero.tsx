@@ -13,9 +13,16 @@ export default function Hero({ lang }: HeroProps) {
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background image */}
       <div
+<<<<<<< HEAD
         className="absolute inset-0 bg-cover bg-top bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/fattire_ebike.jpg)',
+=======
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            'url(https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+>>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
         }}
       />
 
@@ -42,6 +49,7 @@ export default function Hero({ lang }: HeroProps) {
 
           {/* Main headline */}
           <h1 className="font-display text-[clamp(4rem,12vw,9rem)] leading-[0.9] tracking-tight text-white mb-8 animate-fade-up">
+<<<<<<< HEAD
             {t.headline.split('\n').map((line, i) => {
               if (i === 1) {
                 const words = line.split(' ');
@@ -67,6 +75,20 @@ export default function Hero({ lang }: HeroProps) {
                 </span>
               );
             })}
+=======
+            {t.headline.split('\n').map((line, i) => (
+              <span key={i} className="block">
+                {i === 1 ? (
+                  <>
+                    <span className="text-volt-yellow">{line.charAt(0)}</span>
+                    {line.slice(1)}
+                  </>
+                ) : (
+                  line
+                )}
+              </span>
+            ))}
+>>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
           </h1>
 
           {/* Subtext */}
