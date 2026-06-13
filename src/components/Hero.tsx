@@ -45,15 +45,19 @@ export default function Hero({ lang }: HeroProps) {
             {t.headline.split('\n').map((line, i) => {
               if (i === 1) {
                 const words = line.split(' ');
-                const firstWord = words[0];
-                const restOfLine = words.slice(1).join(' ');
                 return (
                   <span key={i} className="block">
-                    <span className="inline-block">
-                      <span className="text-volt-yellow">{firstWord.charAt(0)}</span>
-                      {firstWord.slice(1)}
-                    </span>
-                    {restOfLine ? ` ${restOfLine}` : ''}
+                    {words.map((word, wIdx) => {
+                      const isDublin = word.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase() === 'DUBLIN';
+                      return (
+                        <span key={wIdx}>
+                          {wIdx > 0 && ' '}
+                          <span className={isDublin ? "text-volt-yellow" : ""}>
+                            {word}
+                          </span>
+                        </span>
+                      );
+                    })}
                   </span>
                 );
               }

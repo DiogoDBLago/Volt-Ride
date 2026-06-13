@@ -1,4 +1,4 @@
-import { Instagram, Mail, Phone, MapPin, ExternalLink, Zap } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 import type { Lang } from '../translations';
 import { translations } from '../translations';
 
