@@ -68,7 +68,7 @@ export default function Footer({ lang }: FooterProps) {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-volt-black/0 group-hover:bg-volt-black/60 backdrop-blur-[2px] transition-all duration-300 flex flex-col items-center justify-center gap-2">
+                <div className="absolute inset-0 bg-volt-black/0 group-hover:bg-volt-black/60 backdrop-blur-none group-hover:backdrop-blur-[2px] transition-all duration-300 flex flex-col items-center justify-center gap-2">
                   <Instagram
                     size={i === 0 ? 28 : 20}
                     className="text-volt-yellow scale-75 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out"
