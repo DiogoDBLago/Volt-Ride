@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { Instagram, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
-=======
-import { Instagram, Mail, Phone, MapPin, ExternalLink, Zap } from 'lucide-react';
->>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
 import type { Lang } from '../translations';
 import { translations } from '../translations';
 
@@ -11,25 +7,12 @@ interface FooterProps {
 }
 
 const INSTAGRAM_PHOTOS = [
-<<<<<<< HEAD
   '/images/instagram/instagram_1.png',
   '/images/instagram/instagram_2.png',
   '/images/instagram/instagram_4.png',
   '/images/instagram/instagram_3.png',
   '/images/instagram/instagram_5.png',
 ];
-
-
-=======
-  'https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/163407/pexels-photo-163407.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/2085832/pexels-photo-2085832.jpeg?auto=compress&cs=tinysrgb&w=400',
-  'https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&w=400',
-];
-
->>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
 export default function Footer({ lang }: FooterProps) {
   const t = translations[lang].footer;
 
@@ -44,16 +27,10 @@ export default function Footer({ lang }: FooterProps) {
                 {t.follow}
               </p>
               <a
-<<<<<<< HEAD
                 href="https://www.instagram.com/voltride_ebikes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 group"
-=======
-                href="#"
-                className="flex items-center gap-2 group"
-                onClick={(e) => e.preventDefault()}
->>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
               >
                 <Instagram size={20} className="text-white/40 group-hover:text-volt-yellow transition-colors" />
                 <span className="font-body font-medium text-white/60 group-hover:text-volt-yellow transition-colors text-sm tracking-wide">
@@ -63,14 +40,9 @@ export default function Footer({ lang }: FooterProps) {
               </a>
             </div>
             <a
-<<<<<<< HEAD
               href="https://www.instagram.com/voltride_ebikes"
               target="_blank"
               rel="noopener noreferrer"
-=======
-              href="#"
-              onClick={(e) => e.preventDefault()}
->>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
               className="inline-flex items-center gap-2 border border-white/20 hover:border-volt-yellow text-white/60 hover:text-volt-yellow font-body font-medium text-xs tracking-widest uppercase px-5 py-3 transition-all duration-200"
             >
               <Instagram size={14} />
@@ -79,7 +51,6 @@ export default function Footer({ lang }: FooterProps) {
           </div>
 
           {/* Instagram grid */}
-<<<<<<< HEAD
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
             {INSTAGRAM_PHOTOS.map((src, i) => (
               <a
@@ -90,20 +61,10 @@ export default function Footer({ lang }: FooterProps) {
                 className={`group relative overflow-hidden bg-volt-gray-700 rounded-lg border border-white/5 transition-all duration-300 ${
                   i === 0 ? 'col-span-2 row-span-2 aspect-square' : 'col-span-1 row-span-1 aspect-square'
                 }`}
-=======
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-1">
-            {INSTAGRAM_PHOTOS.map((src, i) => (
-              <a
-                key={i}
-                href="#"
-                onClick={(e) => e.preventDefault()}
-                className="group relative aspect-square overflow-hidden bg-volt-gray-700"
->>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
               >
                 <img
                   src={src}
                   alt={`Volt Ride Instagram post ${i + 1}`}
-<<<<<<< HEAD
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
@@ -117,16 +78,6 @@ export default function Footer({ lang }: FooterProps) {
                   }`}>
                     Volt Ride
                   </span>
-=======
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-volt-black/0 group-hover:bg-volt-black/50 transition-all duration-300 flex items-center justify-center">
-                  <Instagram
-                    size={20}
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                  />
->>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
                 </div>
               </a>
             ))}
@@ -140,17 +91,11 @@ export default function Footer({ lang }: FooterProps) {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-1.5 mb-5">
-<<<<<<< HEAD
               <img
                 src="/images/volt_logo.png"
                 alt="Volt Ride"
                 className="h-10 w-auto"
               />
-=======
-              <span className="font-display text-2xl tracking-wider text-white leading-none">VOLT</span>
-              <Zap className="text-volt-yellow fill-volt-yellow" size={18} strokeWidth={0} />
-              <span className="font-display text-2xl tracking-wider text-white leading-none">RIDE</span>
->>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
             </div>
             <p className="text-volt-gray-300 font-body font-light text-sm leading-[1.8] max-w-xs mb-6">
               Dublin's premier bicycle services company. Empowering the city to move freely, sustainably, and stylishly on two wheels.
@@ -202,11 +147,7 @@ export default function Footer({ lang }: FooterProps) {
               Have a question or want to book a service? Reach us instantly on WhatsApp — we're always here to help.
             </p>
             <a
-<<<<<<< HEAD
               href="https://wa.me/353838269704"
-=======
-              href="https://wa.me/353123456789"
->>>>>>> 64b4271f0d13045df4d82a1cb36863aa0ade9881
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20b757] text-white font-body font-bold text-xs tracking-widest uppercase px-6 py-3.5 transition-all duration-200 hover:shadow-[0_0_20px_rgba(37,211,102,0.3)]"
