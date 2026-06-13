@@ -7,13 +7,13 @@ interface FooterProps {
 }
 
 const INSTAGRAM_PHOTOS = [
-  '/images/fattire_ebike.jpg',
-  '/images/dublin_street.jpg',
-  '/images/trek_ebike.jpg',
-  'https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&w=400',
-  '/images/volt_logo.png',
-  '/images/yellow_ebike.jpg',
+  '/images/instagram/instagram_1.png',
+  '/images/instagram/instagram_2.png',
+  '/images/instagram/instagram_4.png',
+  '/images/instagram/instagram_3.png',
+  '/images/instagram/instagram_5.png',
 ];
+
 
 export default function Footer({ lang }: FooterProps) {
   const t = translations[lang].footer;
@@ -53,26 +53,33 @@ export default function Footer({ lang }: FooterProps) {
           </div>
 
           {/* Instagram grid */}
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-1">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
             {INSTAGRAM_PHOTOS.map((src, i) => (
               <a
                 key={i}
                 href="https://www.instagram.com/voltride_ebikes"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative aspect-square overflow-hidden bg-volt-gray-700"
+                className={`group relative overflow-hidden bg-volt-gray-700 rounded-lg border border-white/5 transition-all duration-300 ${
+                  i === 0 ? 'col-span-2 row-span-2 aspect-square' : 'col-span-1 row-span-1 aspect-square'
+                }`}
               >
                 <img
                   src={src}
                   alt={`Volt Ride Instagram post ${i + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-volt-black/0 group-hover:bg-volt-black/50 transition-all duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-volt-black/0 group-hover:bg-volt-black/60 backdrop-blur-[2px] transition-all duration-300 flex flex-col items-center justify-center gap-2">
                   <Instagram
-                    size={20}
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                    size={i === 0 ? 28 : 20}
+                    className="text-volt-yellow scale-75 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out"
                   />
+                  <span className={`font-body tracking-[0.2em] uppercase text-white opacity-0 group-hover:opacity-100 transition-all duration-300 delay-75 ${
+                    i === 0 ? 'text-xs' : 'text-[10px]'
+                  }`}>
+                    Volt Ride
+                  </span>
                 </div>
               </a>
             ))}
