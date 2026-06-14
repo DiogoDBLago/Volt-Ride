@@ -7,9 +7,9 @@ interface ServicesProps {
 }
 
 const SERVICE_IMAGES = [
-  'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=800',
+  '/images/blue_ebike.png',
   '/images/maintenance.jpg',
-  'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=800',
+  '/images/trek_ebike.jpg',
 ];
 
 const SERVICE_ICONS = [Bike, Wrench, ShoppingBag];
