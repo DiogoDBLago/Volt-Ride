@@ -1,4 +1,4 @@
-import { Bike, Wrench, ShoppingBag, ArrowRight } from 'lucide-react';
+import { Bike, Wrench, ArrowRight } from 'lucide-react';
 import type { Lang } from '../translations';
 import { translations } from '../translations';
 
@@ -9,10 +9,9 @@ interface ServicesProps {
 const SERVICE_IMAGES = [
   '/images/blue_ebike.png',
   '/images/maintenance.jpg',
-  '/images/trek_ebike.jpg',
 ];
 
-const SERVICE_ICONS = [Bike, Wrench, ShoppingBag];
+const SERVICE_ICONS = [Bike, Wrench];
 
 export default function Services({ lang }: ServicesProps) {
   const t = translations[lang].services;
@@ -38,7 +37,7 @@ export default function Services({ lang }: ServicesProps) {
         </div>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/8">
           {t.items.map((item, i) => {
             const Icon = SERVICE_ICONS[i];
             return (

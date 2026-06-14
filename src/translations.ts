@@ -10,7 +10,7 @@ export const translations = {
     },
     hero: {
       tagline: 'FREEDOM ON TWO WHEELS',
-      headline: 'YOUR PARTNER\nIN DUBLIN',
+      headline: 'YOUR TWO-WHEEL PARTNER\nIN DUBLIN',
       sub: 'Premium bike services in the heart of Dublin. Rent, repair, and ride with the city\'s most trusted cycling partner.',
       cta: 'Get Started',
       ctaSub: 'Explore Our Services',
@@ -44,20 +44,13 @@ export const translations = {
           desc: 'Our certified mechanics handle routine repairs and address wear and tear components of your bicycle, ensuring complete safety and performance.',
           cta: 'Book a Service',
         },
-        {
-          title: 'Bikes & Accessories',
-          desc: 'A curated selection of premium accessories designed for urban cycling, keeping you safe, visible, and stylish on city streets.',
-          cta: 'Shop Now',
-        },
       ],
     },
     why: {
       label: 'Why Volt Ride',
       headline: 'THE VOLT RIDE\nDIFFERENCE',
       items: [
-        { title: 'Expert Mechanics', desc: 'Certified professionals with over 10 years of hands-on experience.' },
-        { title: 'Premium Fleet', desc: 'Meticulously maintained bikes for the smoothest city riding experience.' },
-        { title: 'City-Wide Coverage', desc: 'Conveniently located in central Dublin with flexible pickup and drop-off.' },
+        { title: 'Premium Fleet', desc: 'Meticulously maintained high-end bicycles to ensure your smoothest, safest, and most effortless ride through the city.' },
         { title: 'Transparent Pricing', desc: 'No hidden fees. Clear, honest pricing on every service we offer.' },
         { title: 'Fast Turnaround', desc: 'Most repairs completed same day. We know your bike is your freedom.' },
         { title: 'Sustainable Choice', desc: 'Every ride with Volt Ride is a vote for a greener, cleaner Dublin.' },
@@ -84,7 +77,7 @@ export const translations = {
     },
     hero: {
       tagline: 'LIBERDADE SOBRE DUAS RODAS',
-      headline: 'SEU PARCEIRO\nEM DUBLIN',
+      headline: 'SEU PARCEIRO SOBRE DUAS RODAS\nEM DUBLIN',
       sub: 'Serviços premium de bicicleta no coração de Dublin. Alugue, repare e pedale com o parceiro de ciclismo mais confiável da cidade.',
       cta: 'Começar Agora',
       ctaSub: 'Explorar Nossos Serviços',
@@ -118,20 +111,13 @@ export const translations = {
           desc: 'Nossos mecânicos especialistas cuidam de reparos de rotina e de componentes com desgaste temporal da bicicleta, garantindo segurança e desempenho.',
           cta: 'Agendar Serviço',
         },
-        {
-          title: 'Venda de Bikes e Acessórios',
-          desc: 'Selecção exclusiva de acessórios de alta qualidade para o ciclismo urbano, garantindo segurança, visibilidade e estilo no seu dia a dia.',
-          cta: 'Comprar Agora',
-        },
       ],
     },
     why: {
       label: 'Por que Volt Ride',
       headline: 'A DIFERENÇA\nVOLT RIDE',
       items: [
-        { title: 'Mecânicos Especialistas', desc: 'Profissionais certificados com mais de 10 anos de experiência prática.' },
-        { title: 'Frota Premium', desc: 'Bicicletas meticulosamente mantidas para a experiência mais suave na cidade.' },
-        { title: 'Cobertura por Toda a Cidade', desc: 'Localização conveniente no centro de Dublin com retirada e devolução flexíveis.' },
+        { title: 'Frota Premium', desc: 'Bicicletas de alta gama meticulosamente cuidadas para te oferecer a viagem mais suave, segura e ágil pela cidade.' },
         { title: 'Preços Transparentes', desc: 'Sem taxas ocultas. Preços claros e honestos em todos os serviços.' },
         { title: 'Entrega Rápida', desc: 'A maioria dos reparos é concluída no mesmo dia. Sabemos que sua bike é sua liberdade.' },
         { title: 'Escolha Sustentável', desc: 'Cada pedalada com a Volt Ride é um voto por uma Dublin mais verde e limpa.' },
@@ -158,7 +144,7 @@ export const translations = {
     },
     hero: {
       tagline: 'LIBERTAD SOBRE DOS RUEDAS',
-      headline: 'TU SOCIO\nEN DUBLÍN',
+      headline: 'TU ALIADO SOBRE RUEDAS\nEN DUBLÍN',
       sub: 'Servicios premium de bicicletas en el corazón de Dublín. Alquila, repara y pedalea con el aliado ciclista de mayor confianza de la ciudad.',
       cta: 'Comenzar',
       ctaSub: 'Explorar Nuestros Servicios',
@@ -192,20 +178,13 @@ export const translations = {
           desc: 'Nuestros mecánicos certificados se encargan de las reparaciones habituales y del desgaste por uso de tu bicicleta, garantizando tu total seguridad y el mejor rendimiento.',
           cta: 'Reservar cita',
         },
-        {
-          title: 'Venta de Bicis y Accesorios',
-          desc: 'Una cuidada selección de accesorios premium diseñados para el ciclismo urbano, garantizando tu seguridad, visibilidad y estilo en las calles de la ciudad.',
-          cta: 'Comprar Ahora',
-        },
       ],
     },
     why: {
       label: 'Por qué Volt Ride',
       headline: 'LA DIFERENCIA\nVOLT RIDE',
       items: [
-        { title: 'Mecánicos Expertos', desc: 'Profesionales certificados con más de 10 años de experiencia.' },
-        { title: 'Flota Premium', desc: 'Bicicletas meticulosamente mantenidas para garantizar el pedaleo más suave y fluido por la ciudad.' },
-        { title: 'Cobertura en Toda la Ciudad', desc: 'Ubicación conveniente en el centro de Dublín con recogida y devolución flexibles.' },
+        { title: 'Flota Premium', desc: 'Bicicletas de alta gama meticulosamente cuidadas para ofrecerte el viaje más suave, seguro y ágil por la ciudad.' },
         { title: 'Precios Transparentes', desc: 'Sin cargos ocultos. Precios claros y transparentes en todos los servicios que ofrecemos.' },
         { title: 'Reparaciones rápidas', desc: 'La mayoría de las reparaciones se completan el mismo día. Sabemos que tu bicicleta es tu libertad.' },
         { title: 'Elección Sostenible', desc: 'Cada pedalada con Volt Ride es un voto por un Dublín más verde y limpio.' },

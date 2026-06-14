@@ -1,4 +1,4 @@
-import { Award, Star, MapPin, DollarSign, Clock, Leaf } from 'lucide-react';
+import { Star, DollarSign, Clock, Leaf } from 'lucide-react';
 import type { Lang } from '../translations';
 import { translations } from '../translations';
 
@@ -6,7 +6,7 @@ interface WhyChooseUsProps {
   lang: Lang;
 }
 
-const ICONS = [Award, Star, MapPin, DollarSign, Clock, Leaf];
+const ICONS = [Star, DollarSign, Clock, Leaf];
 
 export default function WhyChooseUs({ lang }: WhyChooseUsProps) {
   const t = translations[lang].why;
